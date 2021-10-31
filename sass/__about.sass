@@ -1,0 +1,23 @@
+.about 
+    display: flex
+    flex-direction: column
+    
+    
+    &__info 
+        display: flex
+        flex-direction: column
+        width: 50%
+        margin: 0 auto
+        max-width: 2400px
+
+    &__cards
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        max-width: 2400px
+
+        @media (max-width: 1265px)
+            justify-content: center
+            
+    

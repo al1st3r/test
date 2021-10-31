@@ -1,0 +1,103 @@
+.guides
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+
+    &__actual 
+        display: flex
+        max-width: 360px
+        max-height: 410px
+        flex-direction: column
+
+    &__info
+        padding: 30px 20px
+
+    &__description
+        margin-top: 20px
+    
+    &__preview
+        background: url(../images/guidesimg.png) no-repeat center
+        width: 360px
+        height: 200px
+
+    &__popup
+        position: fixed
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        z-index: 1000
+        background: rgba(0, 0, 0, 0.9)
+        align-items: center
+        justify-content: center
+
+    &__past 
+
+        &-info
+            &-popup
+                padding: 40px
+                overflow-y: scroll
+                height: 200px    
+
+        &-popup
+            margin: 0 auto
+            align-self: center
+            width: 760px
+            height: 1084px
+            border-radius: 20px
+            display: flex
+            flex-direction: column
+            // visibility: hidden
+            background: #F2F5F9
+            // position: fixed
+            // top: 0
+            // right: 0
+            // bottom: 0
+            // left: 0
+            // z-index: 1000
+            // background: rgba(0, 0, 0, 0.9)
+            // align-items: flex-start
+            
+    
+    &__image
+        &-popup
+            width: 760px
+            height: 440px
+            background: url(../images/pastimage1.png) no-repeat center
+    
+    &__time
+        margin-left: 16px
+
+    &__btn
+        &-popup
+            width: 680px
+            height: 54px
+            background: #3486E8
+            margin: 0 auto
+
+
+
+
+    &__when
+        padding-bottom: 15px
+    
+    &__heading
+
+        &-second
+
+            &-popup
+                padding: 20px 0 10px
+
+        &-popup
+            padding: 15px 0 10px
+
+    &__description
+
+        &-second
+
+            &-popup
+                padding: 10px 0 40px
+
+        &-popup
+            padding: 10px 0 20px
+

@@ -1,0 +1,35 @@
+{
+  "name": "new-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/al1st3r/new-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/al1st3r/new-project/issues"
+  },
+  "homepage": "https://github.com/al1st3r/new-project#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.3"
+  },
+  "dependencies": {
+    "gulp4": "^4.0.2",
+    "livereload": "^0.9.3",
+    "node-sass": "^6.0.1"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}

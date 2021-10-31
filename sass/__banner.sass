@@ -1,0 +1,49 @@
+.banner
+    background: url(../images/banner.png) bottom no-repeat
+    // max-width: 2400px
+    height: 100vh
+    width: 100%
+    margin: 0
+    // padding: 33% 32% 0 32%
+    display: flex
+    color: #fff
+
+    &__info
+        display: flex
+        padding: 10% 0 0 32%
+        flex-direction: column
+
+    &__heading
+        margin: 0
+        max-width: 700px
+        font-weight: 500
+        font-size: 72px
+        line-height: 99px
+        letter-spacing: 0.05em
+
+    &__description
+        max-width: 620px    
+        font-size: 18px
+        line-height: 24px
+        margin-top: 40px
+
+    &__btn
+        background: #C6103C
+        box-shadow: none
+        position: relative 
+        margin-top: 40px
+        
+
+        &:hover
+            background: lighten(#C6103C, 15%)
+
+        &::before
+            position: absolute
+            content: ''
+            // background:  linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.46) 100%), url(../images/ellipseleft.png) no-repeat center
+            // background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.46) 100%) no-repeat center 
+            opacity: 0.3
+            width: 22px
+            height: 44px
+
+            
