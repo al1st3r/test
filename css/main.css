@@ -27,8 +27,8 @@
   font-size: 12px;
   line-height: 14px;
   color: #fff;
-  -webkit-transition: background 0.3s linear;
-  transition: background 0.3s linear;
+  -webkit-transition: background 0.3s, color 0.3s linear;
+  transition: background 0.3s, color 0.3s linear;
 }
 
 .heading {
@@ -549,6 +549,10 @@
   -ms-flex-item-align: center;
       align-self: center;
   margin-bottom: 100px;
+}
+.guides__load-more:hover {
+  background-color: #65b1ff;
+  color: #fff;
 }
 .guides__actual {
   display: -webkit-box;
