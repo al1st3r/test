@@ -4,9 +4,14 @@
 }
 
 .wrapper {
-  padding: 120px 230px 0 28%;
+  padding: 120px 12% 0 28%;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+}
+@media (max-width: 1300px) {
+  .wrapper {
+    padding: 120px 2% 0 28%;
+  }
 }
 
 .btn {
@@ -48,7 +53,8 @@
 }
 
 .banner {
-  background: url(../images/banner.png) bottom no-repeat;
+  background: url(../images/banner.png) center no-repeat;
+  background-size: cover;
   height: 100vh;
   width: 100%;
   margin: 0;
@@ -361,11 +367,16 @@
 .action {
   background: url(../images/action-bg.jpg) no-repeat center;
   height: 800px;
-  padding: 222px 230px 0 26%;
+  padding: 222px 12% 0 26%;
   color: #fff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 1300px) {
+  .action {
+    padding: 222px 3% 0 26%;
+  }
 }
 .action__wrapper {
   height: 100%;
@@ -531,6 +542,14 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.guides__load-more {
+  background-color: #fff;
+  border: 1px solid #3297FF;
+  color: #3297FF;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 100px;
+}
 .guides__actual {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -641,6 +660,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1350px) {
+  .tabs__content-active {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .tabs__caption {
   margin: 0 auto;
@@ -674,8 +704,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
-  width: 300px;
-  height: 100%;
+  width: 16%;
+  min-width: 250px;
+  height: 95%;
+  overflow: auto;
   z-index: 1000;
   padding: 24px;
   background: #fff;
@@ -683,11 +715,11 @@
   margin: 20px;
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  overflow: auto;
 }
 @media (max-width: 768px) {
   .menu {
     width: 80px;
+    min-width: 80px;
     padding: 19px;
   }
 }
@@ -794,12 +826,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.menu__arrow-active {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
